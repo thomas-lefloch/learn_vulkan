@@ -1,0 +1,10 @@
+^C:\PROJECTS\LEARN_VULKAN\BUILD\CMAKEFILES\BBC16D30B759FE4094D02F4D0A8FBAF6\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/projects/learn_vulkan -BC:/projects/learn_vulkan/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/projects/learn_vulkan/build/LearnVulkan.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
